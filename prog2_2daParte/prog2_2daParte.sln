@@ -5,6 +5,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20161011_Libreria", "201610
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20161011_TestNumeros", "TestNumeros\20161011_TestNumeros.csproj", "{140CE08D-B02B-4EB2-9583-698A2B89AB04}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20161017_Pintura", "20161017_Pintura\20161017_Pintura.csproj", "{29266FA5-B813-4CB9-A299-21242CC455EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20161017_TestPintura", "20161017_TestPintura\20161017_TestPintura.csproj", "{0185025E-12D3-4EB0-9A8B-8FCB954F628A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +23,14 @@ Global
 		{140CE08D-B02B-4EB2-9583-698A2B89AB04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{140CE08D-B02B-4EB2-9583-698A2B89AB04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{140CE08D-B02B-4EB2-9583-698A2B89AB04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29266FA5-B813-4CB9-A299-21242CC455EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29266FA5-B813-4CB9-A299-21242CC455EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29266FA5-B813-4CB9-A299-21242CC455EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29266FA5-B813-4CB9-A299-21242CC455EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0185025E-12D3-4EB0-9A8B-8FCB954F628A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0185025E-12D3-4EB0-9A8B-8FCB954F628A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0185025E-12D3-4EB0-9A8B-8FCB954F628A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0185025E-12D3-4EB0-9A8B-8FCB954F628A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
