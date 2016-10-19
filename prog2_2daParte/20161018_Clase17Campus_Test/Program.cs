@@ -19,6 +19,7 @@ namespace _20161018_Clase17Campus_Test
             string item4 = "Item 4";
             string item5 = "Item 5";
             string item6 = "Item 6";
+            string item7 = "Item 7";
 
             // Agregar los 6 items y mostrar
             miLista.Add(item1);
@@ -30,31 +31,32 @@ namespace _20161018_Clase17Campus_Test
 
             Console.WriteLine("Mostrar Lista Completa");
             Console.WriteLine("Cantidad de items: " + miLista.Count.ToString());
-            //foreach (string item in miLista)
-            //{
-            //    Console.WriteLine(item);
-            //}
-            for (int i = 0; i < miLista.Count; i++)
+            foreach (string item in miLista)
             {
-                Console.WriteLine(miLista.lista[i]);
+                Console.WriteLine(item);
             }
+            //for (int i = 0; i < miLista.Count; i++)
+            //{
+            //    Console.WriteLine(miLista.lista[i]);
+            //}
             Console.WriteLine("<**********************************>");
             Console.WriteLine("");
             Console.ReadKey();
 
             // Quitar un item y mostrar
             miLista.Remove(item4);
+            miLista.Remove(item7);
 
             Console.WriteLine("Mostrar Lista Sin 4.");
             Console.WriteLine("Cantidad de items: " + miLista.Count.ToString());
-            //foreach (string item in miLista)
-            //{
-            //    Console.WriteLine(item);
-            //}
-            for (int i = 0; i < miLista.Count; i++)
+            foreach (string item in miLista)
             {
-                Console.WriteLine(miLista.lista[i]);
+                Console.WriteLine(item);
             }
+            //for (int i = 0; i < miLista.Count; i++)
+            //{
+            //    Console.WriteLine(miLista.lista[i]);
+            //}
             Console.WriteLine("<**********************************>");
             Console.WriteLine("");
             Console.ReadKey();

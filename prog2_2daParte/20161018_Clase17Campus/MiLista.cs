@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _20161018_Clase17Campus
 {
-    public class MiLista <T>
+    public class MiLista<T> : IEnumerable<T>
     {
         public T[] lista;
 
@@ -57,30 +57,30 @@ namespace _20161018_Clase17Campus
             //Array.ConstrainedCopy(aux, 0, this.lista, 0, this.lista.Length);
         }
 
-        //#region IEnumerable<T> Members
+        #region IEnumerable<T> Members
 
-        //public IEnumerator<T> GetEnumerator()
-        //{
-        //    foreach (T item in this.lista)
-        //    {
-        //        yield return item;
-        //    }
-        //}
+        public IEnumerator<T> GetEnumerator()
+        {
+            foreach (T item in this.lista)
+            {
+                yield return item;
+            }
+        }
 
-        //#endregion
+        #endregion
 
-        //#region IEnumerable Members
+        #region IEnumerable Members
 
-        //System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
-        //{
-        //    for (int i = 0; i < this.lista.Length; i++)
-        //    {
-        //        // Yield each day of the week.
-        //        yield return this.lista[i];
-        //    }
-        //}
+        System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
+        {
+            for (int i = 0; i < this.lista.Length; i++)
+            {
+                // Yield each day of the week.
+                yield return this.lista[i];
+            }
+        }
 
-        //#endregion
+        #endregion
 
     }
 }
