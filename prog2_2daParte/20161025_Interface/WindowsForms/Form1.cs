@@ -28,5 +28,16 @@ namespace WindowsForms
         {
             richTextBoxMostrar.Text = cadena;
         }
+
+
+        bool IGrafica.EscribirTxt(string path)
+        {
+            throw new NotImplementedException();
+        }
+
+        bool IGrafica.LeerTxt(string path)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

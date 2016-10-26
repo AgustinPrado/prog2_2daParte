@@ -21,6 +21,8 @@ namespace Clase_8_Library
         EPuestoJerarquico _puesto;
         int _salario;
 
+        private string directorio = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\texto.txt";
+
         public Empleado(string nombre, string apellido, string legajo, EPuestoJerarquico puesto, int salario)
         {
             this._nombre = nombre;
@@ -70,7 +72,8 @@ namespace Clase_8_Library
             sb.AppendLine("******************");
 
             obj.MostrarEnGUI(sb.ToString());
+            obj.EscribirTxt(directorio, sb.ToString());
+            obj.LeerTxt(directorio);
         }
-
     }
 }
