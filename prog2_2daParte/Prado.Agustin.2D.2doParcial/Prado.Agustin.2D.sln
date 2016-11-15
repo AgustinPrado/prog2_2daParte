@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Esqueleto2doParcial-20161114", "Esqueleto2doParcial-20161114\Esqueleto2doParcial-20161114.csproj", "{0305D440-BFA4-42C4-9EFC-58A23C6767EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{E0B3D62F-A695-4A00-9F9E-95315B327F87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestUnitario", "TestUnitario\TestUnitario.csproj", "{8CA44BE0-17EC-46B4-9A2F-A8BCE60E3BB8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0305D440-BFA4-42C4-9EFC-58A23C6767EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0305D440-BFA4-42C4-9EFC-58A23C6767EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0305D440-BFA4-42C4-9EFC-58A23C6767EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0305D440-BFA4-42C4-9EFC-58A23C6767EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0B3D62F-A695-4A00-9F9E-95315B327F87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0B3D62F-A695-4A00-9F9E-95315B327F87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0B3D62F-A695-4A00-9F9E-95315B327F87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0B3D62F-A695-4A00-9F9E-95315B327F87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CA44BE0-17EC-46B4-9A2F-A8BCE60E3BB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CA44BE0-17EC-46B4-9A2F-A8BCE60E3BB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CA44BE0-17EC-46B4-9A2F-A8BCE60E3BB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CA44BE0-17EC-46B4-9A2F-A8BCE60E3BB8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

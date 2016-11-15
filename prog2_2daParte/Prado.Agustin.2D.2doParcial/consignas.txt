@@ -1,0 +1,8 @@
+Tomar la clase empleado y abstraer los datos _nombre y _apellido en una clase Persona.
+Persona deberá incluir una sobreescritura del método ToString, la cual deberá utilizarse en MostrarDatos de Empleado.
+Crear las excepciones NoGuardoException (con al menos 3 constructores) y NoLeeException (con al menos 2 constructores).
+Modificar la interfaz IArchivos para que sea genérica.
+Implementar la interfaz IArchivos en Empleado. Lanzar las excepciones antes creadas según corresponda.
+Utilizando los botones en el formulario, Guardar y Leer el archivo por intermedio de un Thread.
+Realizar un Test Unitario que pruebe el método Guardar cuando este da un error y lanza la excepción antes creada.
+Realizar un Test Unitario que verifique la correcta creación del archivo utilizando tanto el método Guardar como el Leer.
