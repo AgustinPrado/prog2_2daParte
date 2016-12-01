@@ -9,10 +9,18 @@ using System.Xml.Serialization;
 namespace Entidades
 {
     [Serializable]
-    public class Empleado : Persona, IArchivos<Empleado>
+    public class Empleado : Persona, IArchivos<object>
     {
         //private string _nombre;
         //private string _apellido;
+
+        private string archivo = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\empleado.xml";
+
+        private Empleado empAux;
+        public Empleado EmpleadoLeido
+        {
+            get { return this.empAux; }
+        }
 
         private int _legajo;
 
@@ -46,21 +54,19 @@ namespace Entidades
             return e.ToString();
         }
 
-        public bool guardar(string archivo, Empleado datos)
+        public void guardar(object datos)
         {
             XmlTextWriter writer;
             XmlSerializer ser;
 
             try
             {
-                writer = new XmlTextWriter(archivo, Encoding.UTF8);
+                writer = new XmlTextWriter(this.archivo, Encoding.UTF8);
                 ser = new XmlSerializer(typeof(Empleado));
 
                 ser.Serialize(writer, datos);
 
                 writer.Close();
-
-                return true;
             }
             catch (Exception e)
             {
@@ -68,25 +74,23 @@ namespace Entidades
             }
         }
 
-        public bool leer(string archivo, out Empleado datos)
+        public void leer()
         {
             XmlTextReader reader;
             XmlSerializer ser;
 
             try
             {
-                reader = new XmlTextReader(archivo);
+                reader = new XmlTextReader(this.archivo);
                 ser = new XmlSerializer(typeof(Empleado));
 
-                datos = (Empleado)ser.Deserialize(reader);
+                this.empAux = (Empleado)ser.Deserialize(reader);
 
                 reader.Close();
-
-                return true;
             }
             catch (Exception e)
             {
-                datos = default(Empleado);
+                this.empAux = default(Empleado);
                 throw new NoLeeException(e);
             }
         }

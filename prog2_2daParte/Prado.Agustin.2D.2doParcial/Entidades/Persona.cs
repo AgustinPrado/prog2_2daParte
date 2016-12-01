@@ -14,18 +14,14 @@ namespace Entidades
         private string _nombre;
         public string Nombre
         {
-            get
-            {
-                return this._nombre;
-            }
+            get { return this._nombre;  }
+            set { this._nombre = value; }
         }
         private string _apellido;
         public string Apellido
         {
-            get
-            {
-                return this._apellido;
-            }
+            get { return this._apellido; }
+            set { this._apellido = value; }
         }
         protected abstract int Legajo { set; get; }
 

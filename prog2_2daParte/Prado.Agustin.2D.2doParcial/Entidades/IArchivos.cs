@@ -8,7 +8,7 @@ namespace Entidades
 {
     interface IArchivos<T>
     {
-        bool guardar(string archivo, T datos);
-        bool leer(string archivo, out T datos);
+        void guardar(T datos);
+        void leer();
     }
 }

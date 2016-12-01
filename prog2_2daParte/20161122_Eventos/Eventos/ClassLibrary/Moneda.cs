@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace ClassLibrary
 {
     // solo almacena direcciones de memoria de metodos.
+    // por afuera de la clase.
     public delegate void DelegadoMoneda();
     public delegate void DeleMon(ELado lado);
 
